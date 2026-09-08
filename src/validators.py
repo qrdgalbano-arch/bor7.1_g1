@@ -1,12 +1,13 @@
-"""Input validation helpers for IPv4 and IPv6 addresses."""
+"""Input-validation helpers for IPv4 and IPv6 addresses."""
 
 import ipaddress
 
 
 def validate_ip_address(ip_address):
-    """Check an IP address and return its validity and IP version message."""
+    """Validate an IP address and identify whether it is IPv4 or IPv6."""
     try:
         parsed_address = ipaddress.ip_address(ip_address.strip())
+
     except (ValueError, AttributeError):
         return False, "Invalid IP address."
 

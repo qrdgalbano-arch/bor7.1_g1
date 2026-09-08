@@ -1,8 +1,7 @@
-
 # Python bytecode and cache
 __pycache__/
 *.py[cod]
-*.class
+*$py.class
 
 # Virtual environments
 .venv/
@@ -23,11 +22,3 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
-
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.env
-pytest_cache/
-
